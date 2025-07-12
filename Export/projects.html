@@ -120,6 +120,7 @@
     <link rel="stylesheet" href="assets/css/pikaday.min.css">
     <link rel="stylesheet" href="assets/css/CookieConsentComponent.css">
     <link rel="stylesheet" href="assets/css/animations.compiled.css">
+    <link rel="stylesheet" href="assets/css/Carousel---Slider-With-Animation.css">
     <link rel="stylesheet" href="assets/css/Footer-Dark-Multi-Column-icons.css">
 </head>
 
@@ -130,6 +131,9 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+                    <li class="nav-item dropdown nav-item"><a class="dropdown-toggle nav-link nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="projects.html">My Work</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="projects.html?tag=web-design">Web Design</a><a class="dropdown-item" href="projects.html?tag=projects-for-education">Projects for Education</a><a class="dropdown-item" href="projects.html?tag=extracurricular-projects">Extracurricular Projects</a><a class="dropdown-item" href="my-work/showreel.html">Showreel</a></div>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="../../blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="../../contact.html">Contact</a></li>
                     <li class="nav-item d-flex align-items-center mode-select"><a class="nav-link" id="light-mode" data-bs-theme-value="dark"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill mb-1">
@@ -149,23 +153,13 @@
                     <h1>Projects</h1>
                     <ul class="nav nav-tabs d-flex justify-content-center" data-bss-type="tag-nav" data-bss-sync-url="true">
                         <li class="nav-item tag-all" data-bss-type="tag-loop-item" data-bss-href="" data-bss-filter="blog" data-bss-filter-param="tag" data-bss-filter-value="" data-bss-tag=""><a class="nav-link active" href="" data-bss-state-node="">All Projects</a></li>
-                        <li class="nav-item tag-web-design" data-bss-type="tag-loop-item" data-bss-href="" data-bss-filter="blog" data-bss-filter-param="tag" data-bss-filter-value="web-design" data-bss-tag="web-design"><a class="nav-link" href="" data-bss-state-node="">Web Design</a></li>
+                        <li class="nav-item tag-web-design" data-bss-type="tag-loop-item" data-bss-href="" data-bss-filter="blog" data-bss-filter-param="tag" data-bss-filter-value="web-design" data-bss-tag="web-design"><a class="nav-link" data-bss-state-node="">Web Design</a></li>
                         <li class="nav-item tag-projects-for-education" data-bss-type="tag-loop-item" data-bss-href="" data-bss-filter="blog" data-bss-filter-param="tag" data-bss-filter-value="projects-for-education" data-bss-tag="projects-for-education"><a class="nav-link" href="" data-bss-state-node="">Projects for Education</a></li>
                         <li class="nav-item tag-extracurricular-projects" data-bss-type="tag-loop-item" data-bss-href="" data-bss-filter="blog" data-bss-filter-param="tag" data-bss-filter-value="extracurricular-projects" data-bss-tag="extracurricular-projects"><a class="nav-link" href="" data-bss-state-node="">Extracurricular Projects</a></li>
                     </ul>
                 </div>
                 <div data-bss-type="blog-loop" data-bss-filters="[&quot;tag&quot;]" data-bss-empty-filter-actions="[{&quot;filter&quot;:&quot;tag&quot;,&quot;value&quot;:&quot;show-all&quot;}]" data-bss-perpage="6" data-bss-page-param="pg" data-bss-scroll-on-change="true" style="display: none !important;">
-                    <div class="row row-cols-3" data-bss-type="blog-loop-base">
-                        <div class="col post-tag-extracurricular-projects" data-bss-type="blog-loop-item" style="padding-bottom: 15px;">
-                            <div class="card"><a href="my-work/extracurricular-projects/project-page-1.html"><img class="card-img-top rainbow-border" src="assets/img/brand/headshot.webp"></a>
-                                <div class="card-body" style="min-height: 250px;"><a href="my-work/extracurricular-projects/project-page-1.html">
-                                        <h4 class="text-center text-body d-flex justify-content-center">Project Page - ADCM Networks</h4>
-                                    </a>
-                                    <div class="d-flex flex-wrap gap-1 mb-3" data-bss-type="tag-loop" style="float: left;"><span class="tag-extracurricular-projects" data-bss-type="tag-loop-item"><span class="badge bg-primary"><span>Extracurricular Projects</span></span></span></div>
-                                    <p class="text-start card-text" style="clear: both;">Post Excerpt</p><a class="d-flex justify-content-end card-link blog-link" href="my-work/extracurricular-projects/project-page-1.html"><u class="coloured-underline">&gt; Read more</u></a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3" data-bss-type="blog-loop-base">
                         <div class="col post-tag-projects-for-education" data-bss-type="blog-loop-item" style="padding-bottom: 15px;">
                             <div class="card"><a href="my-work/projects-for-education/cs_box.html"><img class="card-img-top rainbow-border" src="assets/img/projects/cs_box/csbox_logo.png"></a>
                                 <div class="card-body" style="min-height: 250px;"><a href="my-work/projects-for-education/cs_box.html">
@@ -177,12 +171,22 @@
                             </div>
                         </div>
                         <div class="col post-tag-web-design" data-bss-type="blog-loop-item" style="padding-bottom: 15px;">
-                            <div class="card"><a href="my-work/web-design/project-page-1-1.html"><img class="card-img-top rainbow-border" src="assets/img/brand/headshot.webp"></a>
-                                <div class="card-body" style="min-height: 250px;"><a href="my-work/web-design/project-page-1-1.html">
-                                        <h4 class="text-center text-body d-flex justify-content-center">Project Page - ADCM Networks</h4>
+                            <div class="card"><a href="my-work/web-design/st-thomas-church-keresley.html"><img class="card-img-top rainbow-border" src="assets/img/projects/keresley_church/keresleychurch.png"></a>
+                                <div class="card-body" style="min-height: 250px;"><a href="my-work/web-design/st-thomas-church-keresley.html">
+                                        <h4 class="text-center text-body d-flex justify-content-center">St Thomas' Church Keresley</h4>
                                     </a>
                                     <div class="d-flex flex-wrap gap-1 mb-3" data-bss-type="tag-loop" style="float: left;"><span class="tag-web-design" data-bss-type="tag-loop-item"><span class="badge bg-primary"><span>Web Design</span></span></span></div>
-                                    <p class="text-start card-text" style="clear: both;">Post Excerpt</p><a class="d-flex justify-content-end card-link blog-link" href="my-work/web-design/project-page-1-1.html"><u class="coloured-underline">&gt; Read more</u></a>
+                                    <p class="text-start card-text" style="clear: both;">A responsive and dynamic website including historical archives for public access.</p><a class="d-flex justify-content-end card-link blog-link" href="my-work/web-design/st-thomas-church-keresley.html"><u class="coloured-underline">&gt; Read more</u></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col post-tag-extracurricular-projects" data-bss-type="blog-loop-item" style="padding-bottom: 15px;">
+                            <div class="card"><a href="my-work/extracurricular-projects/the-computers-identity.html"><img class="card-img-top rainbow-border" src="assets/img/projects/the_computer%27s%20identity/identitypreview.png"></a>
+                                <div class="card-body" style="min-height: 250px;"><a href="my-work/extracurricular-projects/the-computers-identity.html">
+                                        <h4 class="text-center text-body d-flex justify-content-center">The Computer's Identity</h4>
+                                    </a>
+                                    <div class="d-flex flex-wrap gap-1 mb-3" data-bss-type="tag-loop" style="float: left;"><span class="tag-extracurricular-projects" data-bss-type="tag-loop-item"><span class="badge bg-primary"><span>Extracurricular Projects</span></span></span></div>
+                                    <p class="text-start card-text" style="clear: both;">An interactive poem entry for the BCU Christian Union "Where Is Identity Found" Art Competition.</p><a class="d-flex justify-content-end card-link blog-link" href="my-work/extracurricular-projects/the-computers-identity.html"><u class="coloured-underline">&gt; Read more</u></a>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +200,6 @@
                     </nav>
                 </div>
             </div>
-            <div class="container"></div>
         </section>
     </main>
     <footer class="text-body bg-body" id="Light-Footer" data-bs-theme="light">
@@ -744,6 +747,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/Carousel---Slider-With-Animation-slider_with_animation.js"></script>
     <script src="assets/js/CookieConsentComponent-cookieconsent.js"></script>
     <script src="https://kit.fontawesome.com/8970d94f9b.js"></script>
     <script src="assets/js/pikaday.min.js"></script>

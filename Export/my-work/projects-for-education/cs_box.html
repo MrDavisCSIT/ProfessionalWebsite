@@ -121,6 +121,7 @@
     <link rel="stylesheet" href="../../assets/css/pikaday.min.css">
     <link rel="stylesheet" href="../../assets/css/CookieConsentComponent.css">
     <link rel="stylesheet" href="../../assets/css/animations.compiled.css">
+    <link rel="stylesheet" href="../../assets/css/Carousel---Slider-With-Animation.css">
     <link rel="stylesheet" href="../../assets/css/Footer-Dark-Multi-Column-icons.css">
 </head>
 
@@ -131,6 +132,9 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+                    <li class="nav-item dropdown nav-item"><a class="dropdown-toggle nav-link nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="projects.html">My Work</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="projects.html?tag=web-design">Web Design</a><a class="dropdown-item" href="projects.html?tag=projects-for-education">Projects for Education</a><a class="dropdown-item" href="projects.html?tag=extracurricular-projects">Extracurricular Projects</a><a class="dropdown-item" href="my-work/showreel.html">Showreel</a></div>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="../../blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="../../contact.html">Contact</a></li>
                     <li class="nav-item d-flex align-items-center mode-select"><a class="nav-link" id="light-mode" data-bs-theme-value="dark"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill mb-1">
@@ -144,37 +148,61 @@
         </div>
     </nav>
     <main class="page">
-        <section class="portfolio-block project">
+        <section class="portfolio-block block-intro" style="padding-bottom: 10px;">
             <div class="container">
-                <div class="heading">
-                    <h2>project name</h2>
+                <div class="heading" style="margin-bottom: 10px;">
+                    <h2 class="text-capitalize">St Thomas' Church Keresley</h2>
                 </div>
-                <div class="image" style="background-image:url(&quot;../../assets/img/tech/image4.jpg&quot;);"></div>
+                <p style="margin-top: 15px;font-size: 24px;">A responsive and dynamic website including historical archives for public access.</p>
+            </div>
+        </section>
+        <section class="portfolio-block project" style="padding-top: 0;">
+            <div class="container">
+                <div class="carousel slide" data-bs-ride="false" id="carousel-1" style="width: 95%;margin-right: auto;margin-left: auto;margin-bottom: 25px;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="1910" height="880" src="../../assets/img/projects/keresley_church/keresleychurch.png" alt="Slide Image"></div>
+                        <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1910" height="880" src="../../assets/img/projects/keresley_church/parish_magazines.png" alt="Slide Image"></div>
+                        <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1910" height="880" src="../../assets/img/projects/keresley_church/burial_register_system.png" alt="Slide Image"></div>
+                    </div>
+                    <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2"></button></div>
+                </div>
                 <div class="row">
                     <div class="col-12 col-md-6 offset-md-1 info">
-                        <h3>Description</h3>
-                        <p>Nam a ultrices mauris. Nam efficitur, lorem a vehicula interdum, ligula velit euismod lorem, vitae vehicula ligula tortor eu leo. Maecenas porttitor massa ut vestibulum euismod. Aliquam eget mi aliquam.</p>
+                        <h3>Phase 1 - April 2014</h3>
+                        <p>In April 2014, the Vicar at St Thomas’ Church Keresley asked me to redesign their website using an easily updateable package. The website took 6 months to complete and was finally completed in November 2014. Subsequent redesigns of the website were completed in 2019, 2023 with ongoing tweaks and modifications starting in 2025.<br><br>The main website framework is the latest version of WordPress with a modified theme.</p>
+                        <h3>Phase 2 - October 2016</h3>
+                        <p>Phase 2 included the digitisation and upload of the parish archives dating back from the mid 1800s and utilises an in-house magazine reading platform for all of its publications.<br><br>The archives section of the website also includes burial registers up to the mid-1990s and allows visitors to search available registers.</p>
+                        <h3>Phase 3 - September 2021&nbsp;</h3>
+                        <p>Following the coronavirus lockdown in 2020, the church signed up to the Church of England’s Digital Charter which includes upgrades to their online presence including plans to introduce guest internet access within centres, online access to servcies (currently through recorded services but live streamed services are planned for the near future), upgrades to internet connectivity within centres (including a mesh wifi system in each centre) and device upgrades in preperation for Windows 10 end of life date in October 2025.<br><br>Device upgrades were completed Easter 2025 while online presence upgrades are ongoing.</p>
+                        <h3>Phase 4 - 2025 and Beyond</h3>
                         <p>Lorem ipsum dapibus dolor non, malesuada mauris. Aliquam eleifend mauris non odio mattis auctor. Aenean sit amet elementum tellus, a facilisis ligula. Pellentesque ac vehicula mauris.</p>
                     </div>
-                    <div class="col-12 col-md-3 offset-md-1 meta">
-                        <div class="tags"><span class="meta-heading">Tags</span><a href="#">Resource</a><a href="#">Project</a><span class="meta-heading">Date</span><span>25-04-2017</span></div>
+                    <div class="col-12 col-md-3 offset-md-1 meta" style="padding-left: 12px;">
+                        <div class="tags"><span class="meta-heading">Project Status</span><span>Ongoing - Phase 4</span><span class="meta-heading">Client</span><span>The Parish of Keresley with Coundon PCC</span><span class="meta-heading">Date</span><span>April 2014</span><span class="meta-heading">Products Created</span><span>Website and Historical Archives<br><br>Ongoing remote technical support and consulting for ongoing digital platforms</span></div><a class="btn btn-primary" role="button" href="https://www.keresley.church/" target="_blank" style="margin-top: 25px;margin-right: auto;margin-left: auto;display: flex;justify-content: center;">Project Website</a>
                     </div>
                 </div>
                 <div class="more-projects">
-                    <h3 class="text-center">More Projects</h3>
-                    <div class="row gallery">
-                        <div class="col-md-4 col-lg-3">
-                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="../../assets/img/nature/image2.jpg"></a></div>
+                    <h3 class="text-center" style="margin-bottom: 10px;">More Projects</h3>
+                    <div data-bss-type="blog-loop" data-bss-perpage="12">
+                        <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 mt-0" data-bss-type="blog-loop-base">
+                            <div class="post-tag-web-design col" data-bss-type="blog-loop-item">
+                                <div class="card"><a href="../web-design/st-thomas-church-keresley.html"><img class="img-fluid card-img-top" width="1910" height="880" src="../../assets/img/projects/keresley_church/keresleychurch.png"></a>
+                                    <div class="card-body"><a href="../web-design/st-thomas-church-keresley.html">
+                                            <h4 class="text-body">St Thomas' Church Keresley</h4>
+                                        </a>
+                                        <p class="card-text">A responsive and dynamic website including historical archives for public access.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-4 col-lg-3">
-                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="../../assets/img/nature/image3.jpg"></a></div>
-                        </div>
-                        <div class="col-md-4 col-lg-3">
-                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="../../assets/img/tech/image4.jpg"></a></div>
-                        </div>
-                        <div class="col-md-4 col-lg-3">
-                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="../../assets/img/nature/image5.jpg"></a></div>
-                        </div>
+                        <nav class="d-flex justify-content-center mt-3" data-bss-type="blog-loop-pagination">
+                            <ul class="pagination">
+                                <li class="page-item disabled" data-type="prev" data-page="1"><a class="page-link" aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
+                                <li class="page-item active" data-type="regular" data-page="1"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item disabled" data-type="next" data-page="1"><a class="page-link" aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -321,10 +349,411 @@
             </div>
         </div>
     </footer>
+    <script>
+        (function() {
+            let collections = document.querySelectorAll('[data-bss-type="blog-loop"]');
+            let tagNavs = document.querySelectorAll('[data-bss-type="tag-nav"]');
+            let tagLoops = document.querySelectorAll('[data-bss-type="tag-loop"]');
+            let authorLoops = document.querySelectorAll('[data-bss-type="author-loop"]');
+            let authorNavs = document.querySelectorAll('[data-bss-type="author-nav"]');
+
+            window.addEventListener("popstate", (e) => {
+                for (let collection of collections) {
+                    updateCollection(collection);
+                }
+
+                for (let tagNav of tagNavs) {
+                    updateTagNav(tagNav);
+                }
+
+                for (let authorNav of authorNavs) {
+                    updateAuthorNav(authorNav);
+                }
+            });
+
+            for (let collection of collections) {
+
+                updateCollection(collection);
+
+                if (!canPaginateCollection(collection)) continue;
+
+                let pagination = collection.querySelector('[data-bss-type="blog-loop-pagination"]');
+
+                pagination.addEventListener('click', function(e) {
+                    let paginationItem = e.target.closest('.page-item');
+                    if (!paginationItem) return;
+
+                    e.preventDefault();
+
+                    if (paginationItem.classList.contains('disabled') || paginationItem.classList.contains('active')) return;
+
+                    let collection = paginationItem.closest('[data-bss-type="blog-loop"]');
+                    if (!collection) return;
+
+                    let page = parseInt(paginationItem.dataset.page);
+                    if (!page) return;
+
+                    let pageParam = getPageParameter(collection);
+
+                    if (pageParam) {
+                        const url = new URL(window.location);
+                        url.searchParams.set(pageParam, page);
+                        history.pushState({
+                            [pageParam]: page
+                        }, document.title, url);
+
+                        for (let c of collections) {
+                            let param = getPageParameter(c);
+                            if (param !== pageParam) continue;
+                            updateCollection(c);
+                        }
+                    } else {
+                        updateCollection(collection, page);
+                    }
+                });
+            }
+
+            for (let tagNav of tagNavs) {
+                updateTagNav(tagNav);
+                tagNav.addEventListener('click', onTagClick);
+            }
+
+            for (let tagLoop of tagLoops) {
+                tagLoop.addEventListener('click', onTagClick);
+            }
+
+            for (let authorLoop of authorLoops) {
+                authorLoop.addEventListener('click', onAuthorClick);
+            }
+
+            for (let authorNav of authorNavs) {
+                updateAuthorNav(authorNav);
+            }
+
+            function onTagClick(e) {
+                onBlogFilterClick(e);
+
+                for (let nav of tagNavs) {
+                    updateTagNav(nav);
+                }
+            }
+
+            function onAuthorClick(e) {
+                onBlogFilterClick(e);
+
+                for (let authorNav of authorNavs) {
+                    updateAuthorNav(authorNav);
+                }
+            }
+
+            function onBlogFilterClick(e) {
+                const item = e.target.closest('[data-bss-filter="blog"]');
+                if (!item || !item.dataset.hasOwnProperty('bssHref') || !item.dataset.hasOwnProperty('bssFilterParam')) return;
+
+                const stateNode = item.dataset.hasOwnProperty('bssStateNode') ? item : item.querySelector('[data-bss-state-node]');
+
+                if (stateNode && (stateNode.classList.contains('disabled') || stateNode.classList.contains('active'))) {
+                    e.preventDefault();
+                    return;
+                }
+
+                const link = item.dataset.bssHref;
+                if (!linksToCurrentPage(link)) return;
+
+                e.preventDefault();
+
+                const url = new URL(window.location);
+                const filterParam = item.dataset.bssFilterParam;
+                const filterValue = item.dataset.bssFilterValue || '';
+
+                const collectionsToUpdate = [];
+                const newQueryParams = {
+                    [filterParam]: filterValue
+                };
+
+                for (let c of collections) {
+                    if (!canFilterCollection(c)) continue;
+                    collectionsToUpdate.push(c);
+
+                    let pageParam = getPageParameter(c);
+                    let page = url.searchParams.get(pageParam);
+                    if (page === null || page == 1) continue;
+
+                    newQueryParams[pageParam] = 1;
+                }
+
+                for (let param in newQueryParams) {
+                    if (newQueryParams[param]) {
+                        url.searchParams.set(param, newQueryParams[param]);
+                    } else {
+                        url.searchParams.delete(param);
+                    }
+                }
+
+                history.pushState(newQueryParams, document.title, url);
+
+                for (let c of collectionsToUpdate) {
+                    updateCollection(c);
+                }
+            }
+
+            function getCollectionFilters(collection) {
+                let filters = [];
+
+                try {
+                    const parsed = JSON.parse(collection.dataset.bssFilters);
+
+                    if (Array.isArray(parsed)) {
+                        filters = parsed;
+                    }
+                } catch (e) {}
+
+                return filters;
+            }
+
+            function getCollectionEmptyFilterAction(collection, filter = '') {
+                let emptyFilterActions = [];
+
+                try {
+                    const parsed = JSON.parse(collection.dataset.bssEmptyFilterActions);
+
+                    if (Array.isArray(parsed)) {
+                        emptyFilterActions = parsed;
+                    }
+                } catch (e) {}
+
+                const action = emptyFilterActions.find(action => action.filter === filter);
+
+                return action ? action.value : '';
+            }
+
+            function canFilterCollection(collection) {
+                return !!getCollectionFilters(collection).length;
+            }
+
+            function canFilterCollectionByTag(collection) {
+                return getCollectionFilters(collection).includes('tag');
+            }
+
+            function canFilterCollectionByAuthor(collection) {
+                return getCollectionFilters(collection).includes('author');
+            }
+
+            function shouldShowAllItemsForEmptyFilter(collection, filter = '') {
+                return getCollectionEmptyFilterAction(collection, filter) === 'show-all';
+            }
+
+            function canPaginateCollection(collection) {
+                return !!getCollectionPagination(collection);
+            }
+
+            function getCollectionPagination(collection) {
+                return collection.querySelector('[data-bss-type="blog-loop-pagination"]');
+            }
+
+            function getPageParameter(collection) {
+                return collection.dataset.bssPageParam;
+            }
+
+            function linksToCurrentPage(path = '') {
+                let currentURL, url;
+
+                try {
+                    currentURL = new URL(window.location);
+                    url = new URL(path, window.location.href);
+                } catch (e) {
+                    console.error(e);
+                }
+
+                return currentURL.origin === url.origin && currentURL.pathname === url.pathname;
+            }
+
+            function updateCollection(collection, page, activeTag = '', activeAuthor = '') {
+
+                const url = new URL(window.location.href);
+
+                if (canPaginateCollection(collection)) {
+                    if (!page) {
+                        let pageParam = getPageParameter(collection);
+                        page = (pageParam ? url.searchParams.get(pageParam) : 1) || 1;
+                    }
+                }
+
+                if (canFilterCollectionByTag(collection) && !activeTag) {
+                    let tagParam = 'tag';
+                    activeTag = url.searchParams.get(tagParam) || '';
+                }
+
+                if (canFilterCollectionByAuthor(collection) && !activeAuthor) {
+                    let authorParam = 'author';
+                    activeAuthor = url.searchParams.get(authorParam) || '';
+                }
+
+                renderCollectionPage(collection, page, activeTag, activeAuthor);
+            }
+
+            function renderCollectionPage(collection, page = 1, activeTag = '', activeAuthor = '') {
+
+                page = Math.max(parseInt(page, 10), 1);
+
+                collection.style.removeProperty('display');
+
+                let loopBase = collection.querySelector('[data-bss-type="blog-loop-base"]');
+                loopBase && loopBase.style.removeProperty('display');
+
+                let emptyState = collection.querySelector('[data-bss-type="empty-state"]');
+                emptyState && emptyState.style.setProperty('display', 'none', 'important');
+
+                let listItems = [].slice.call(collection.querySelectorAll('[data-bss-type="blog-loop-item"]'));
+                listItems.forEach(item => item.style.setProperty('display', 'none', 'important'));
+
+                if (canFilterCollectionByTag(collection)) {
+                    listItems = listItems.filter(item => activeTag ? item.classList.contains('post-tag-' + activeTag) : shouldShowAllItemsForEmptyFilter(collection, 'tag'));
+                }
+
+                if (canFilterCollectionByAuthor(collection)) {
+                    listItems = listItems.filter(item => activeAuthor ? item.classList.contains('post-author-' + activeAuthor) : shouldShowAllItemsForEmptyFilter(collection, 'author'));
+                }
+
+                let perPage = collection.dataset.bssPerpage || listItems.length;
+                let visibleListItems = listItems.slice((page - 1) * perPage, page * perPage);
+                visibleListItems.forEach(item => item.style.removeProperty('display'));
+
+                let isEmpty = !visibleListItems.length;
+
+                if (isEmpty) {
+                    loopBase && loopBase.style.setProperty('display', 'none', 'important');
+                    emptyState && emptyState.style.removeProperty('display');
+                }
+
+                let itemCount = listItems.length;
+                let pageCount = Math.max(Math.ceil(itemCount / perPage), 1);
+
+                updateCollectionPagination(collection, page, pageCount, isEmpty);
+
+                if (collection.dataset.bssScrollOnChange) {
+                    scrollToCollectionTop(collection);
+                }
+            }
+
+            function updateCollectionPagination(collection, page, pageCount, isEmpty) {
+                let pagination = getCollectionPagination(collection);
+                if (!pagination) return;
+
+                let paginationItems = [].slice.call(pagination.querySelectorAll('.page-item'));
+
+                if (pageCount === 1 || isEmpty) {
+                    pagination.style.setProperty('display', 'none', 'important');
+                } else {
+                    pagination.style.removeProperty('display');
+                }
+
+                let previousBtnDisabled = page - 1 <= 0;
+                let previousPage = previousBtnDisabled ? 1 : page - 1;
+
+                let nextBtnDisabled = page + 1 > pageCount;
+                let nextPage = nextBtnDisabled ? pageCount : page + 1;
+
+                for (let i = 0; i < paginationItems.length; i++) {
+                    let paginationItem = paginationItems[i];
+
+                    paginationItem.classList.remove('active', 'disabled');
+
+                    if (paginationItem.dataset.type === 'prev') {
+                        paginationItem.dataset.page = previousPage;
+
+                        if (previousBtnDisabled) {
+                            paginationItem.classList.add('disabled');
+                        }
+                    } else if (paginationItem.dataset.type === 'next') {
+                        paginationItem.dataset.page = nextPage;
+
+                        if (nextBtnDisabled) {
+                            paginationItem.classList.add('disabled');
+                        }
+                    } else {
+                        if (paginationItem.dataset.page > pageCount) {
+                            paginationItem.style.setProperty('display', 'none', 'important');
+                        } else {
+                            paginationItem.style.removeProperty('display');
+                        }
+
+                        if (paginationItem.dataset.page == page) {
+                            paginationItem.classList.add('active');
+                        }
+                    }
+                }
+            }
+
+            function scrollToCollectionTop(collection) {
+                const rect = collection.getBoundingClientRect();
+                const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+                const threshold = 100;
+
+                if (rect.top >= 0 && viewHeight - rect.top > threshold) return;
+
+                setTimeout(() => {
+                    collection.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                        inline: "start"
+                    });
+                }, 0);
+            }
+
+            function updateTagNav(tagNav) {
+                const url = new URL(window.location.href);
+
+                let tagParam = 'tag';
+                let tag = url.searchParams.get(tagParam) || '';
+
+                renderTagNav(tagNav, tag);
+            }
+
+            function renderTagNav(tagNav, activeTag = '') {
+                if (!tagNav.dataset.bssSyncUrl) return;
+
+                let navItems = [].slice.call(tagNav.querySelectorAll('[data-bss-type="tag-loop-item"]'));
+
+                navItems.forEach(item => {
+                    const activeClassNode = item.dataset.hasOwnProperty('bssStateNode') ? item : item.querySelector('[data-bss-state-node]');
+                    if (!activeClassNode) return;
+
+                    activeClassNode.classList.remove('active');
+
+                    const link = item.dataset.bssHref;
+                    if (!linksToCurrentPage(link) || activeClassNode.classList.contains('disabled')) return;
+
+                    if (item.dataset.bssTag === activeTag) {
+                        activeClassNode.classList.add('active');
+                    }
+                });
+            }
+
+            function updateAuthorNav(authorNav) {
+                const url = new URL(window.location.href);
+
+                let authorParam = 'author';
+                let author = url.searchParams.get(authorParam) || '';
+
+                renderAuthorNav(authorNav, author);
+            }
+
+            function renderAuthorNav(authorNav, activeAuthor = '') {
+                if (!canFilterCollectionByAuthor(authorNav)) return;
+
+                authorNav.style.removeProperty('display');
+
+                let items = [].slice.call(authorNav.querySelectorAll('[data-bss-type="author-loop-item"]'));
+                items.forEach(item => item.classList.contains('author-' + activeAuthor) ? item.style.removeProperty('display') : item.style.setProperty('display', 'none', 'important'));
+            }
+        })();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../../assets/js/bs-init.js"></script>
+    <script src="../../assets/js/Carousel---Slider-With-Animation-slider_with_animation.js"></script>
     <script src="../../assets/js/CookieConsentComponent-cookieconsent.js"></script>
     <script src="https://kit.fontawesome.com/8970d94f9b.js"></script>
     <script src="../../assets/js/pikaday.min.js"></script>
