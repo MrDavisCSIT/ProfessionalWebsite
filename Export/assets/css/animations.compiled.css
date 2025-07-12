@@ -1,0 +1,49 @@
+.rainbow-border:hover {
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(
+      from var(--border-angle),
+      #154854,
+      #112 5%,
+      #112 60%,
+      #213 95%
+    );
+  border: solid 5px transparent;
+  border-radius: 5px;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #154854, #60C401 99%, transparent);
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+  background-position: center center;
+  animation: bg-spin 3s linear infinite;
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+@keyframes colour-change {
+  0% {
+    background: linear-gradient(120deg, #154854, #60C401);
+  }
+  50% {
+    background: linear-gradient(120deg, #60C401, #154854, #60C401);
+  }
+  100% {
+    background: linear-gradient(120deg, #60C401, #154854);
+  }
+}
+@keyframes reverse-colour-change {
+  0% {
+    background: linear-gradient(120deg, #60C401, #154854);
+  }
+  50% {
+    background: linear-gradient(120deg, #154854, #60C401, #154854);
+  }
+  100% {
+    background: linear-gradient(120deg, #154854, #60C401);
+  }
+}
