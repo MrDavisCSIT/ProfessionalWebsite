@@ -2,14 +2,14 @@
   --border-angle: 0turn;
   --main-bg: conic-gradient(
       from var(--border-angle),
-      #154854,
+      var(--bs-primary),
       #112 5%,
       #112 60%,
       #213 95%
     );
   border: solid 5px transparent;
   border-radius: 5px;
-  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #154854, #60C401 99%, transparent);
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, var(--bs-primary), var(--bs-secondary) 99%, transparent);
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
   background-position: center center;
   animation: bg-spin 3s linear infinite;
@@ -27,23 +27,23 @@
 }
 @keyframes colour-change {
   0% {
-    background: linear-gradient(120deg, #154854, #60C401);
+    background: linear-gradient(120deg, var(--bs-primary), var(--bs-secondary));
   }
   50% {
-    background: linear-gradient(120deg, #60C401, #154854, #60C401);
+    background: linear-gradient(120deg, var(--bs-secondary), var(--bs-primary), var(--bs-secondary));
   }
   100% {
-    background: linear-gradient(120deg, #60C401, #154854);
+    background: linear-gradient(120deg, var(--bs-secondary), var(--bs-primary));
   }
 }
 @keyframes reverse-colour-change {
   0% {
-    background: linear-gradient(120deg, #60C401, #154854);
+    background: linear-gradient(120deg, var(--bs-secondary), var(--bs-primary));
   }
   50% {
-    background: linear-gradient(120deg, #154854, #60C401, #154854);
+    background: linear-gradient(120deg, var(--bs-primary), var(--bs-secondary), var(--bs-primary));
   }
   100% {
-    background: linear-gradient(120deg, #154854, #60C401);
+    background: linear-gradient(120deg, var(--bs-primary), var(--bs-secondary));
   }
 }

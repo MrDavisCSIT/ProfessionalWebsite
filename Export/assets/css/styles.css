@@ -74,32 +74,32 @@
 [data-bs-theme=dark] .card-link .blog-link {
   --bs-link-color: #ffffff !important;
   --bs-link-color-rgb: 255,255,255 !important;
-  --bs-link-hover-color: #60C401 !important;
-  --bs-link-hover-color-rgb: 96,196,1 !important;
+  --bs-link-hover-color: var(--bs-secondary) !important;
+  --bs-link-hover-color-rgb: var(--bs-secondary-rgb) !important;
   color: #ffffff !important;
 }
 
 [data-bs-theme=dark] .card-link .blog-link:hover {
   --bs-link-color: #ffffff !important;
   --bs-link-color-rgb: 255,255,255 !important;
-  --bs-link-hover-color: #60C401 !important;
-  --bs-link-hover-color-rgb: 96,196,1 !important;
-  color: #60C401 !important;
+  --bs-link-hover-color: var(--bs-secondary) !important;
+  --bs-link-hover-color-rgb: var(--bs-secondary-rgb) !important;
+  color: var(--bs-secondary) !important;
 }
 
 [data-bs-theme=light] .card-link .blog-link {
-  --bs-link-color: #154854 !important;
-  --bs-link-color-rgb: 21,72,84 !important;
-  --bs-link-hover-color: #60C401 !important;
-  --bs-link-hover-color-rgb: 96,196,1 !important;
+  --bs-link-color: var(--bs-primary) !important;
+  --bs-link-color-rgb: var(--bs-primary-rgb) !important;
+  --bs-link-hover-color: var(--bs-secondary) !important;
+  --bs-link-hover-color-rgb: var(--bs-secondary-rgb) !important;
   color: var(--bs-link-color);
 }
 
 [data-bs-theme=light] .card-link .blog-link:hover {
-  --bs-link-color: #154854 !important;
-  --bs-link-color-rgb: 21,72,84 !important;
-  --bs-link-hover-color: #60C401 !important;
-  --bs-link-hover-color-rgb: 96,196,1 !important;
+  --bs-link-color: var(--bs-primary) !important;
+  --bs-link-color-rgb: var(--bs-primary-rgb) !important;
+  --bs-link-hover-color: var(--bs-secondary) !important;
+  --bs-link-hover-color-rgb: var(--bs-secondary-rgb) !important;
   color: var(--bs-link-hover-color);
 }
 
@@ -144,13 +144,13 @@
 }
 
 [data-bs-theme=light] .gradient {
-  background: linear-gradient(120deg, #154854, #60C401)!important;
+  background: linear-gradient(120deg, rgb(var(--bs-primary-rgb)), rgb(var(--bs-secondary-rgb)))!important;
   color: #fff;
   transition: background 1000ms linear;
 }
 
 [data-bs-theme=auto] .gradient {
-  background: linear-gradient(120deg, #154854, #60C401)!important;
+  background: linear-gradient(120deg, rgb(var(--bs-primary-rgb)), rgb(var(--bs-secondary-rgb)))!important;
   color: #fff;
   transition: background 1000ms linear;
 }
@@ -173,7 +173,7 @@
 } */
 
 [data-bs-theme=dark] .gradient {
-  background: linear-gradient(120deg, #60C401, #154854)!important;
+  background: linear-gradient(120deg, rgb(var(--bs-secondary-rgb)), rgb(var(--bs-primary-rgb)))!important;
   color: #fff;
   transition: background 1000ms linear;
 }
@@ -188,10 +188,10 @@
 [data-bs-theme=dark] .coloured-underline {
   /*text-decoration-line: underline;*/
   /*text-decoration-thickness: 2.5px;*/
-  /*text-decoration-color: linear-gradient(#60C401, #154854), linear-gradient(rgb(96, 196, 1),rgb(96, 196, 1)), linear-gradient(#154854, #154854);*/
+  /*text-decoration-color: linear-gradient(--bs-secondary, var(--bs-primary)), linear-gradient(rgb(var(--bs-secondary-rgb)),rgb(var(--bs-secondary-rgb))), linear-gradient(var(--bs-primary), var(--bs-primary));*/
   /*transition: background-size 2s linear, background-position 2s linear;*/
   text-decoration: none;
-  background-image: linear-gradient(#070d21, #070d21), linear-gradient(rgb(96, 196, 1),rgb(96, 196, 1)), linear-gradient(#154854, #154854);
+  background-image: linear-gradient(#070d21, #070d21), linear-gradient(rgb(var(--bs-secondary-rgb)),rgb(var(--bs-secondary-rgb))), linear-gradient(rgb(var(--bs-primary-rgb)),rgb(var(--bs-primary-rgb)));
   background-size: 20px 2px, 100% 2px, 0 2px;
   background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -201,10 +201,10 @@
 [data-bs-theme=light] .coloured-underline {
   /*text-decoration-line: underline;*/
   /*text-decoration-thickness: 2.5px;*/
-  /*text-decoration-color: linear-gradient(#60C401, #154854), linear-gradient(rgb(96, 196, 1),rgb(96, 196, 1)), linear-gradient(#154854, #154854);*/
+  /*text-decoration-color: linear-gradient(--bs-secondary, var(--bs-primary)), linear-gradient(rgb(var(--bs-secondary-rgb)),rgb(var(--bs-secondary-rgb))), linear-gradient(var(--bs-primary), var(--bs-primary));*/
   /*transition: background-size 2s linear, background-position 2s linear;*/
   text-decoration: none;
-  background-image: linear-gradient(#fff, #fff), linear-gradient(rgb(96, 196, 1),rgb(96, 196, 1)), linear-gradient(#154854, #154854);
+  background-image: linear-gradient(#fff, #fff), linear-gradient(rgb(var(--bs-secondary-rgb)),rgb(var(--bs-secondary-rgb))), linear-gradient(rgb(var(--bs-primary-rgb)),rgb(var(--bs-primary-rgb)));
   background-size: 20px 2px, 100% 2px, 0 2px;
   background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -230,11 +230,73 @@
 }
 
 .rainbow-border {
-  max-height: 150px;
+  max-height: 15em;
   object-fit: cover;
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+.slider-image-fit {
+  object-fit: contain !important;
+}
+
+.center-everything {
+  margin-right: auto!important;
+  margin-left: auto!important;
+}
+
+.portfolio-block.block-intro {
+  text-align: center;
+  padding-top: 5em;
+  padding-bottom: 2em;
+}
+
+.portfolio-block.project {
+  padding-top: 0px;
+  padding-bottom: 3em;
+}
+
+.portfolio-block.project .more-projects {
+  margin-top: 2em;
+  border-top: 1px solid var(--bs-dark-subtle);
+  padding-top: 1em;
+}
+
+.portfolio-block.block-intro p {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 30px;
+  max-width: 95%;
+}
+
+.project-carousel {
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+.portfolio-block .heading h2, .portfolio-block .heading .h2 {
+  text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+  font-size: 2.5rem;
+}
+
+.swiper-control {
+  color: var(--bs-secondary);
+}
+
+:root {
+  --swiper-theme-color: var(--bs-secondary);
+}
+
+.dropdown-menu .dropdown-item:active {
+  --bs-dropdown-link-active-bg: var(--bs-secondary)!important;
 }
 
