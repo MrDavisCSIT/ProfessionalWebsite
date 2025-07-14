@@ -300,3 +300,69 @@
   --bs-dropdown-link-active-bg: var(--bs-secondary)!important;
 }
 
+.portfolio-navbar.gradient {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.logo {
+  margin-right: 0;
+  padding: 0;
+}
+
+.portfolio-navbar.gradient img {
+  width: 100px;
+  height: 100px;
+}
+
+.heading.blog-heading.acknowledgements {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/blog/dissertation-acknowledgements.jpg") center / cover;
+  color: white;
+}
+
+.footer-copyright {
+  margin-left: 2em;
+}
+
+.loop-padding {
+  padding-top: 25px;
+}
+
+.footer-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.accreditations-title {
+  font-weight: bold;
+}
+
+.accreditations-navigation {
+  margin-top: 0.5em;
+}
+
+.heading.page-heading {
+  margin-bottom: 25px;
+}
+
+.loop-item {
+  padding-bottom: 15px;
+}
+
+.card-resize {
+  min-height: 250px;
+}
+
+.dates {
+  float: right;
+}
+
+.tags {
+  float: left;
+}
+
+.excerpts {
+  clear: both;
+}
+
