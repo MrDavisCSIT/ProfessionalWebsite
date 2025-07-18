@@ -248,7 +248,6 @@
 }
 
 .portfolio-block.block-intro {
-  text-align: center;
   padding-top: 5em;
   padding-bottom: 2em;
 }
@@ -364,5 +363,255 @@
 
 .excerpts {
   clear: both;
+}
+
+.heading.blog-heading.pbm-website {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/peter_bell%20music/peter_bell_music.webp") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.keresley-website {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/keresley_church/keresleychurch.webp") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.showreel {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/photo-1489599849927-2ee91cede3ba.jpg") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.frizzle-tv {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/frizzle/frizzlepreview.webp") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.bcumha-website {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/bcumha/bcumhapreview.webp") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.bcudiscover-website {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/bcu_dis.cover/bcudiscoverpreview.png") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.bcucu-website {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/bcucu/bcucupreview.webp") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.taskmaster-ios {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/taskmaster_for%20ios/taskmasteriospreview.png") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.naturefindings-windows {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/nature_findings/naturefindingspreview.png") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.mymind-ios {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/my_mind/my_mind_logo.png") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.csbox-web {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/cs_box/csbox_logo.png") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.bitbox-various {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/bit_box/bit_box_logo.png") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.identity-website {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/the_computers_identity/identitypreview.png") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.taskmaster-web {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/task_master/taskmasterpreview.jpg") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.sortai-windows {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/sort.ai/sort.ai_logo.png") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.societyplus-web {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/society+/societypluspreview.png") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.iamaware-film {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/iamaware.webp") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.exambufforbluff-windows {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/exam_buff%20or%20exam%20bluff/app_logo.png") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.citationneeded-web {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/projects/citation_needed/login_screen.png") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.clutter {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/blog/clearning-the-clutter.webp") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.edtech {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/blog/edtech-strategies.webp") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.reset {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/blog/its-been-a-while.webp") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.milestone {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/blog/milestone.jpg") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.try-again {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/blog/somethings-not-right.jpg") center / cover;
+  color: white;
+}
+
+.heading.blog-heading.tes-launch {
+  height: 25em;
+  background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url("/assets/img/blog/what-started-it-all.webp") center / cover;
+  color: white;
+}
+
+.button {
+  margin-bottom: 80px;
+}
+
+.hide-quote {
+  display: none;
+}
+
+.post-images {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.blog-image-container {
+  width: 250px;
+}
+
+.blog-list {
+  margin-bottom: 16px;
+}
+
+.blog-button {
+  margin: 0PX 0PX 80PX;
+}
+
+.project-buttons {
+  margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.more-projects-heading {
+  margin-bottom: 10px!important;
+}
+
+.meta.project-details {
+  padding-left: 12px!important;
+  padding-right: 12px!important;
+}
+
+.portfolio-video {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1em;
+}
+
+.intro-margin {
+  margin-top: 25px;
+}
+
+.about-intro {
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.headshot {
+  max-width: 500px;
+}
+
+.text-margin {
+  margin-top: 15px;
+}
+
+.cv-group {
+  max-width: 75%;
+}
+
+.portfolio-block.cv.no-padding {
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.heading-no-gap {
+  margin-bottom: 0px!important;
+}
+
+.work-experience.group.wex-div {
+  margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-margin {
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  max-width: 85%;
+}
+
+.portfolio-block.block-intro.auto-margin {
+  margin-top: auto;
+}
+
+.screen-content.featured-project {
+  background-image: url("/assets/img/projects/cs_box/csbox_homepage.jpeg");
 }
 

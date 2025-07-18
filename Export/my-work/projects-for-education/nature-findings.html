@@ -137,9 +137,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
-                    <li class="nav-item dropdown nav-item" href="projects.html"><a class="dropdown-toggle nav-link nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="/projects.html">My Work</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="/projects.html?tag=web-design">Web Design</a><a class="dropdown-item" href="/projects.html?tag=projects-for-education">Projects for Education</a><a class="dropdown-item" href="/projects.html?tag=extracurricular-projects">Extracurricular Projects</a><a class="dropdown-item" href="/my-work/showreel.html">Showreel</a></div>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/projects.html">My Work</a></li>
                     <li class="nav-item"><a class="nav-link" href="/blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
                     <li class="nav-item d-flex align-items-center mode-select"><a class="nav-link" id="light-mode" data-bs-theme-value="dark"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill mb-1">
@@ -153,9 +151,9 @@
         </div>
     </nav>
     <main class="page">
-        <section class="portfolio-block block-intro" style="padding-bottom: 10px;">
+        <section class="portfolio-block block-intro">
             <div class="container center-everything">
-                <div class="align-content-center heading blog-heading" style="height: 25em;background: linear-gradient(rgba(var(--bs-primary-rgb),0.75), rgba(var(--bs-secondary-rgb),0.75)), url(&quot;/assets/img/projects/nature_findings/naturefindingspreview.png&quot;) center / cover;color: white;">
+                <div class="align-content-center heading blog-heading naturefindings-windows">
                     <h2>Nature Findings</h2>
                     <p>A Microsoft Windows Application to store and view bird sightings. Submitted as part of a final year project.</p>
                 </div>
@@ -171,19 +169,19 @@
                     <div class="carousel-indicators focus-ring"><button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></button></div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-6 offset-md-1 info">
+                    <div class="col info">
                         <p>Achieved a D Grade (47%)<br><br>A local naturalist wishes to log nature sightings during walks. The original project looks at developing a windows application that connects to an online database which will allow further deveopment of the project to allow other users to be able to view other peoples sightings. A future project would create a mobile application vserion of the project which will utilise mobile data on devices.</p>
                     </div>
-                    <div class="col-12 col-md-3 offset-md-1 meta" style="padding-left: 12px;">
-                        <div class="tags"><span class="meta-heading">Institution</span><span>Coundon Court</span><span class="meta-heading">Qualification</span><span>A Level Computing</span><span class="meta-heading">Grade</span><span>D (47%)</span><span class="meta-heading">Submitted</span><span>April 2013</span><span class="meta-heading">Products Created</span><span>Microsoft Windows Application</span></div><a class="btn btn-primary" role="button" href="https://github.com/MrDavisCSIT/Binary-Light-Box" target="_blank" style="margin-top: 25px;margin-right: auto;margin-left: auto;display: flex;justify-content: center;"> View project on Gitea</a>
+                    <div class="col-auto meta project-details">
+                        <div class="tags"><span class="meta-heading">Institution</span><span>Coundon Court</span><span class="meta-heading">Qualification</span><span>A Level Computing</span><span class="meta-heading">Grade</span><span>D (47%)</span><span class="meta-heading">Submitted</span><span>April 2013</span><span class="meta-heading">Products Created</span><span>Microsoft Windows Application</span><a class="btn btn-primary project-buttons" role="button" href="https://gitea.adcmnetworks.co.uk/alexander/NatureFindings" target="_blank"> View project on Gitea</a></div>
                     </div>
                 </div>
                 <div class="more-projects">
-                    <h3 class="text-center" style="margin-bottom: 10px;">More Projects</h3>
-                    <div data-bss-type="blog-loop" data-bss-perpage="12">
+                    <h3 class="text-center more-projects-heading">More Projects</h3>
+                    <div data-bss-type="blog-loop" data-bss-perpage="3" style="display: none !important;">
                         <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 mt-0" data-bss-type="blog-loop-base">
                             <div class="post-tag-projects-for-education col" data-bss-type="blog-loop-item">
-                                <div class="card"><a href="/my-work/projects-for-education/bitbox.html"><img class="img-fluid card-img-top" width="1080" height="1080" src="/assets/img/projects/bit_box/bit_box_logo.png"></a>
+                                <div class="card"><a href="/my-work/projects-for-education/bitbox.html"><img class="img-fluid card-img-top rainbow-border" width="1080" height="1080" src="/assets/img/projects/bit_box/bit_box_logo.png"></a>
                                     <div class="card-body"><a href="/my-work/projects-for-education/bitbox.html">
                                             <h4 class="text-body">Bit:Box</h4>
                                         </a>
@@ -192,7 +190,7 @@
                                 </div>
                             </div>
                             <div class="post-tag-projects-for-education col" data-bss-type="blog-loop-item">
-                                <div class="card"><a href="/my-work/projects-for-education/csbox.html"><img class="img-fluid card-img-top" width="500" height="500" src="/assets/img/projects/cs_box/csbox_logo.png"></a>
+                                <div class="card"><a href="/my-work/projects-for-education/csbox.html"><img class="img-fluid card-img-top rainbow-border" width="500" height="500" src="/assets/img/projects/cs_box/csbox_logo.png"></a>
                                     <div class="card-body"><a href="/my-work/projects-for-education/csbox.html">
                                             <h4 class="text-body">CS:Box</h4>
                                         </a>
@@ -201,7 +199,7 @@
                                 </div>
                             </div>
                             <div class="post-tag-projects-for-education col" data-bss-type="blog-loop-item">
-                                <div class="card"><a href="/my-work/projects-for-education/my-mind.html"><img class="img-fluid card-img-top" width="338" height="338" src="/assets/img/projects/my_mind/my_mind_logo.png"></a>
+                                <div class="card"><a href="/my-work/projects-for-education/my-mind.html"><img class="img-fluid card-img-top rainbow-border" width="338" height="338" src="/assets/img/projects/my_mind/my_mind_logo.png"></a>
                                     <div class="card-body"><a href="/my-work/projects-for-education/my-mind.html">
                                             <h4 class="text-body">My Mind</h4>
                                         </a>
@@ -209,8 +207,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="post-tag-projects-for-education col" data-bss-type="blog-loop-item">
-                                <div class="card"><a href="/my-work/projects-for-education/task-master-ios.html"><img class="img-fluid card-img-top" width="940" height="500" src="/assets/img/projects/taskmaster_for%20ios/taskmasteriospreview.png"></a>
+                            <div class="post-tag-projects-for-education col" data-bss-type="blog-loop-item" style="display: none !important;">
+                                <div class="card"><a href="/my-work/projects-for-education/task-master-ios.html"><img class="img-fluid card-img-top rainbow-border" width="940" height="500" src="/assets/img/projects/taskmaster_for%20ios/taskmasteriospreview.png"></a>
                                     <div class="card-body"><a href="/my-work/projects-for-education/task-master-ios.html">
                                             <h4 class="text-body">Task Master for iOS</h4>
                                         </a>
@@ -223,7 +221,8 @@
                             <ul class="pagination">
                                 <li class="page-item disabled" data-type="prev" data-page="1"><a class="page-link" aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
                                 <li class="page-item active" data-type="regular" data-page="1"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item disabled" data-type="next" data-page="1"><a class="page-link" aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
+                                <li class="page-item" data-type="regular" data-page="2"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item" data-type="next" data-page="2"><a class="page-link" aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
                             </ul>
                         </nav>
                     </div>
@@ -236,7 +235,7 @@
             <div class="row justify-content-center">
                 <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
                     <h3 class="fs-6 text-center text-body accreditations-title">Accreditations</h3>
-                    <div class="swiper w-100" id="light-swiper" data-bss-swiper="{&quot;direction&quot;:&quot;horizontal&quot;,&quot;loop&quot;:true,&quot;autoplay&quot;:{&quot;pauseOnMouseEnter&quot;:true},&quot;autoHeight&quot;:true,&quot;effect&quot;:&quot;fade&quot;,&quot;fadeEffect&quot;:{&quot;crossFade&quot;:true}}">
+                    <div class="swiper text-body w-100" id="light-swiper" data-bss-swiper="{&quot;direction&quot;:&quot;horizontal&quot;,&quot;loop&quot;:true,&quot;autoplay&quot;:{&quot;pauseOnMouseEnter&quot;:true},&quot;autoHeight&quot;:true,&quot;effect&quot;:&quot;fade&quot;,&quot;fadeEffect&quot;:{&quot;crossFade&quot;:true}}">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><a href="https://www.credly.com/badges/9c9dd6cd-2703-4539-adc9-366069cbc3a9/public_url" target="_blank"><img class="img-fluid w-100 accreditation" width="352" height="352" src="/assets/img/accreditations/mce_microsoft_certified_educator.png"></a></div>
                             <div class="swiper-slide"><a href="https://www.credly.com/badges/b5ac17a1-0914-496f-9d85-9608966259ee/public_url" target="_blank"><img class="img-fluid w-100 accreditation" width="600" height="600" src="/assets/img/accreditations/microsoft_innovative_educator_expert_2023_2024.png"></a></div>
@@ -306,7 +305,7 @@
             <div class="row justify-content-center">
                 <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
                     <h3 class="fs-6 text-center text-body accreditations-title">Accreditations</h3>
-                    <div class="swiper w-100" id="dark-swiper" data-bss-swiper="{&quot;direction&quot;:&quot;horizontal&quot;,&quot;loop&quot;:true,&quot;autoplay&quot;:{&quot;pauseOnMouseEnter&quot;:true},&quot;autoHeight&quot;:true,&quot;effect&quot;:&quot;fade&quot;}">
+                    <div class="swiper text-body w-100" id="dark-swiper" data-bss-swiper="{&quot;direction&quot;:&quot;horizontal&quot;,&quot;loop&quot;:true,&quot;autoplay&quot;:{&quot;pauseOnMouseEnter&quot;:true},&quot;autoHeight&quot;:true,&quot;effect&quot;:&quot;fade&quot;,&quot;fadeEffect&quot;:{&quot;crossFade&quot;:true}}">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><a href="https://www.credly.com/badges/9c9dd6cd-2703-4539-adc9-366069cbc3a9/public_url" target="_blank"><img class="img-fluid w-100 accreditation" width="352" height="352" src="/assets/img/accreditations/mce_microsoft_certified_educator.png"></a></div>
                             <div class="swiper-slide"><a href="https://www.credly.com/badges/b5ac17a1-0914-496f-9d85-9608966259ee/public_url" target="_blank"><img class="img-fluid w-100 accreditation" width="600" height="600" src="/assets/img/accreditations/microsoft_innovative_educator_expert_2023_2024.png"></a></div>
